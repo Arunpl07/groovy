@@ -4,7 +4,7 @@ def call() {
         
 
         stage('Build') {
-            sh 'make clean'
+            // sh 'make clean'
             sh 'make'
         }
 
