@@ -1,9 +1,7 @@
 // vars/buildCProjectWithNotification.groovy
 def call() {
     try {
-        stage('Checkout') {
-            checkout scm
-        }
+        
 
         stage('Build') {
             sh 'make clean'
