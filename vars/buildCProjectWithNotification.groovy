@@ -29,7 +29,7 @@ def notifySuccess() {
     emailext(
         subject: "Build Successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
         body: "Good news! The build was successful.",
-        to: 'your.email@example.com'
+        to: 'arunpl07@gmail.com'
     )
 }
 
@@ -37,6 +37,6 @@ def notifyFailure(Exception e) {
     emailext(
         subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
         body: "The build failed with the following error: ${e.getMessage()}",
-        to: 'your.email@example.com'
+        to: 'arunpl07@gmail.com'
     )
 }
